@@ -3,16 +3,18 @@
     src: url(./satoshie-black.otf);
 }
 
-
 body {
     background: url(/logo.png);
     background-repeat: no-repeat;
-    
+    background-position: center 40%; 
+    background-size: auto; 
+    background-attachment: fixed; 
     background-color: #353b2e;
     align-items: center;
     justify-items: center;
-    height: max-content;
+    height: max-content; 
 }
+
 
 .login {
     background-color: #646f5870;
@@ -39,9 +41,20 @@ input {
     padding-right: 1rem;
     border: none;
     height: 2rem;
+    color: #4b3621;
+    transition: all 0.2s ease-in-out;
 }
 
+input:focus {
+    outline: none;
+    box-shadow: #dad7c9 0px 0px 6px;
+}
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
 button {
     background-color: #dad7c9;
@@ -49,21 +62,18 @@ button {
     border-style: none;
     border-radius: 1rem;
     padding: 0.5rem;
+    width: 50rem;
     transition: all 0.15s ease-in-out;
     margin-top: 3rem;
+    color: #4b3621;
 }
 
 
 button:active {
     background-color: #a19f95;
+    scale: 98%;
 }
 
 button:hover{
-    box-shadow: #dad7c9 0px 0px 5px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: stretch;
-    width: 100%;
+    box-shadow: #dad7c9 0px 0px 6px;
 }
