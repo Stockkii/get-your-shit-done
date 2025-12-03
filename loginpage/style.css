@@ -4,26 +4,54 @@
 }
 
 body {
+    overflow: hidden;
     background: url(logo.png);
     background-repeat: no-repeat;
-    background-position: center 40%; 
+    background-position: 45% 40%; 
     background-size: auto; 
     background-attachment: fixed; 
     background-color: #353b2e;
-    height: max-content; 
+    height: 100vh;
+    align-content: center;
 }
 
+.loginFailed {
+    text-align: center;
+    color: #e7725d;
+    padding-top: 3rem;
+    text-shadow: #e7725d 0px 0px 5px;
+    animation: wobble 2.5s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+
+@keyframes wobble {
+    0%{
+        transform: rotateX(0deg);
+        opacity: 100%;
+    }
+
+    50%{
+        transform: rotateY(15deg);
+        opacity: 70%;
+    }
+
+    100%{
+        transform: rotateX(0deg);
+        opacity: 100%;
+    }
+}
 
 .login {
     background-color: #646f5870;
     backdrop-filter: blur(20px);
-    margin: 5rem;
     color: #dad7c9;
     font-family: satoshi;
     padding: 2rem;
-    align-items: center;
-    justify-self: center;
-    width: 30rem;
+    margin: 5rem auto;
+    width: 15rem;
+    max-width: 30rem;
     border-radius: 2rem;
     box-shadow: #646f58 0px 0px 10px;
 }
@@ -32,12 +60,22 @@ body {
     justify-items: center;
 }
 
+.title {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+    font-family: satoshi;
+}
+
+
+
 input {
     font-family: satoshi;
     font-size: large;
     border-radius: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 14rem;
     border: none;
     height: 2rem;
     color: #4b3621;
