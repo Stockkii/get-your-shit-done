@@ -10,8 +10,6 @@ body {
     background-size: auto; 
     background-attachment: fixed; 
     background-color: #353b2e;
-    align-items: center;
-    justify-items: center;
     height: max-content; 
 }
 
@@ -24,6 +22,7 @@ body {
     font-family: satoshi;
     padding: 2rem;
     align-items: center;
+    justify-self: center;
     width: 30rem;
     border-radius: 2rem;
     box-shadow: #646f58 0px 0px 10px;
