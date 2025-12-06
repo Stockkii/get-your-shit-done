@@ -1,0 +1,105 @@
+@font-face {
+    font-family: satoshi;
+    src: url(Satoshi-Black.otf);
+}
+
+body {
+    background-color: #c1bd9a;
+    overflow: hidden;
+    justify-items: center;
+}
+
+.homebar {
+    align-items: center;
+    border-radius: 1.4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: #dad7c2;
+    margin: 1rem auto;
+    background-color: #646f58;
+    width: 80rem;
+    height: 4rem;
+    font-family: satoshi;
+}
+
+.mainCard {
+    width: 80vw;
+    font-family: satoshi;
+    padding: 4rem;
+    background-color: #4b3621;
+    border-radius: 1rem;
+}
+
+.mission {
+    background: linear-gradient(135deg, #646f58, #646f584f);
+    color: #dad7c2;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 20rem;
+    backdrop-filter: blur(20px);
+    height: 24rem;
+}
+
+.Missions {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+#editButtonMissions {
+    width: 100%;
+    font-family: satoshi;
+    color: #dad7c2;
+    fill: #c1bd9a;
+    background-color: #646f5886;
+    box-shadow: #646f58 0px 0px 10px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+#editButtonMissions:active {
+    scale: 95%;
+}
+
+#missionsTitle {
+    color: #dad7c2;
+    padding-bottom: 1rem;
+}
+
+.missionEdit {
+    background-color: white;
+    display: none;
+}
+
+#editButtonMissions::after {
+    .missionEdit {
+        display: block;
+    }
+}
+
+#missionHead {
+    padding: none;
+}
+
+.Habits {
+    display: flex;
+    flex-direction: row;
+    color: #dad7c2;
+    gap: 2rem;
+}
+
+.habit {
+    width: 20rem;
+    font-size: 18.72px;
+    background: linear-gradient(135deg, #646f58, #646f584f);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#habitsTitle {
+    color: #dad7c2;
+}
