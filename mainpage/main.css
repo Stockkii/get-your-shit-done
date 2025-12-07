@@ -5,11 +5,13 @@
 
 body {
     background-color: #c1bd9a;
-    overflow: hidden;
     justify-items: center;
+    justify-content: center;
+    overflow-x: unset;
 }
 
 .homebar {
+    justify-items: center;
     align-items: center;
     border-radius: 1.4rem;
     padding-left: 5rem;
@@ -25,9 +27,19 @@ body {
 .mainCard {
     width: 80vw;
     font-family: satoshi;
+    justify-self: center;
     padding: 4rem;
     background-color: #4b3621;
     border-radius: 1rem;
+}
+
+.Missions {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
 }
 
 .mission {
@@ -35,18 +47,10 @@ body {
     color: #dad7c2;
     border-radius: 1rem;
     padding: 2rem;
-    width: 20rem;
+    width: 500px;
+    min-width: 20rem;
     backdrop-filter: blur(20px);
     height: 24rem;
-}
-
-.Missions {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 auto;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 2rem;
 }
 
 #editButtonMissions {
@@ -59,6 +63,7 @@ body {
     border: none;
     transition: all 0.1s ease-in-out;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #editButtonMissions:active {
@@ -68,17 +73,6 @@ body {
 #missionsTitle {
     color: #dad7c2;
     padding-bottom: 1rem;
-}
-
-.missionEdit {
-    background-color: white;
-    display: none;
-}
-
-#editButtonMissions::after {
-    .missionEdit {
-        display: block;
-    }
 }
 
 #missionHead {
@@ -102,4 +96,31 @@ body {
 
 #habitsTitle {
     color: #dad7c2;
+}
+
+.quick {
+    display: flex;
+    flex-direction:column;
+    width: 30rem;
+    font-size: 20px;
+    color: #dad7c2;
+    background: linear-gradient(135deg, #646f58, #646f584f);
+}
+
+#quicksTitle {
+    color: #dad7c2;
+}
+
+.quickButtons button {
+    
+    flex-direction: column;
+    min-width: 10rem;
+    font-size: 20px;
+    font-family: satoshi;
+    background-color: #646f5886;
+    border: none;
+    box-shadow: #646f58 0px 0px 10px;
+    border-radius: 5px;
+    color: #dad7c2;
+    padding: 0.7rem;
 }
